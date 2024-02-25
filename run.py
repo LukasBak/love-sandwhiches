@@ -34,6 +34,7 @@ def validate_data(values):
     converts all values into intergers.
     """
     try:
+        [int(vlaue) for value in values]
         if len(values) != 6:
             raise ValueError(
                 f"Exacly 6 Values required, you provided{len(values)}"
